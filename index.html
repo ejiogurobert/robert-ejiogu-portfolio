@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bobby</title>
+    <link
+      rel="shortcut icon"
+      href="images/5-9-14-eyes-explained-featured-image-big-800x400.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bobby</title>
-  <link rel="shortcut icon" href="images/5-9-14-eyes-explained-featured-image-big-800x400.png" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div class="fixedheader">
-    <header class="main-header">
-      <div class="ROB26">
-        <a href="#" class="main-header__brand" onclick="hideSideBar()"> HOME </a>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a href="https://internship.zuri.team/" class="zuri"><img src="images/Favicon.png" class="zuri_logo"
-                alt="Zuri logo"/></a>
+  <body>
+    <div class="fixedheader">
+      <header class="main-header">
+        <div class="ROB26">
+          <a href="#" class="main-header__brand" onclick="hideSideBar()">
+            HOME
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="https://internship.zuri.team/" class="zuri"
+                ><img
+                  src="images/Favicon.png"
+                  class="zuri_logo"
+                  alt="Zuri logo"
+              /></a>
+            </li>
+            <li class="main-nav__item" onclick="showSideBar()">
+              <a href="javascript:void(0)" class="zuri"
+                ><img src="images/square.png" class="zuri_logo" alt="Zuri logo"
+              /></a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#aboutme" class="nav-link">About</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://github.com/ejiogurobert" class="nav-link"
+                >View Portfolio</a
+              >
+            </li>
+            <li class="main-nav__item main-nav__item--cta">
+              <a href="files/robert_resume.pdf" class="nav-link" download=""
+                >Download Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="side-bar" id="sideBar">
+          <img
+            src="images/cancel.png"
+            alt=""
+            class="cancel_button"
+            onclick="hideSideBar()"
+          />
+          <ul>
+            <li class="">
+              <a href="#aboutme" onclick="hideSideBar()">About</a>
+            </li>
+            <li class="">
+              <a href="https://github.com/ejiogurobert">View Portfolio</a>
+            </li>
+            <li class="">
+              <a href="files/robert_resume.pdf" download="">Download Resume</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <main onclick="hideSideBar()">
+      <section id="product-overview">
+        <div>
+          <div>
+            <h1>Hi, My name is Robert Ejiogu</h1>
+            <h2>A Frontend Developer</h2>
+          </div>
+        </div>
+      </section>
+      <section id="aboutme" class="about">
+        <div class="about_pic">
+          <img src="images/FB_IMG_1589112947703.jpg" alt="about picture" />
+        </div>
+        <div class="about_essay">
+          <p>
+            A web developer who believes in changing the world in his own way.
+            He's a Two(2)-time recognized National Award holder in Petroleum
+            Engineering. Holds a First class Bachelors degree in Petroleum
+            Engineering, Madonna University. He is passionate about programming
+            and currently on course to venture as frontend developer via Zuri
+            internship. Loves to be in an innovative environment as learning and
+            implementing new ideas are his key abilities.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="#">Support</a>
           </li>
-          <li class="main-nav__item" onclick="showSideBar()">
-            <a href="javascript:void(0)" class="zuri"><img src="images/square.png" class="zuri_logo"
-                alt="Zuri logo" /></a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#aboutme" class="nav-link">About</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="files/robert_resume.pdf" class="nav-link">View Resume</a>
-          </li>
-          <li class="main-nav__item main-nav__item--cta">
-            <a href="files/robert_resume.pdf" class="nav-link" download="">Download Resume</a>
+          <li class="main-footer__link">
+            <a href="#">Terms of Use</a>
           </li>
         </ul>
       </nav>
-      <div class="side-bar" id="sideBar">
-        <img src="images/cancel.png" alt="" class="cancel_button" onclick="hideSideBar()">
-        <ul>
-          <li class="">
-            <a href="#aboutme" onclick="hideSideBar()">About</a>
-          </li>
-          <li class="">
-            <a href="files/robert_resume.pdf">View Resume</a>
-          </li>
-          <li class="">
-            <a href="files/robert_resume.pdf" download="">Download Resume</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-  </div>
-  <main onclick="hideSideBar()">
-    <section id="product-overview">
-      <div>
-        <div>
-          <h1>Hi, My name is Robert Ejiogu</h1>
-          <h2>A Frontend Developer</h2>
-        </div>
-      </div>
-    </section>
-    <section id="aboutme" class="about">
-      <div class="about_pic">
-        <img src="images/FB_IMG_1589112947703.jpg" alt="about picture" />
-      </div>
-      <div class="about_essay">
-        <p>
-          A web developer who believes in changing the world in his own way.
-          He's a Two(2)-time recognized National Award holder in Petroleum
-          Engineering. Holds a First class Bachelors degree in Petroleum
-          Engineering, Madonna University. He is passionate about programming
-          and currently on course to venture as frontend developer via Zuri
-          internship. Loves to be in an innovative environment as learning and
-          implementing new ideas are his key abilities.
-        </p>
-      </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <nav>
-      <ul class="main-footer__links">
-        <li class="main-footer__link">
-          <a href="#">Support</a>
-        </li>
-        <li class="main-footer__link">
-          <a href="#">Terms of Use</a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
+    </footer>
 
-  <script src="js/app.js"></script>
-</body>
-
+    <script src="js/app.js"></script>
+  </body>
 </html>
