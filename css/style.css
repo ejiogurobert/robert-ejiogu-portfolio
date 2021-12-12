@@ -75,7 +75,10 @@ main {
 
 .zuri_logo {
   height: 46px;
-  padding: 0 30px;
+  width: 46px;
+  border-radius: 20%;
+  /* padding: 0 30px; */
+  
 }
 
 .zuri:hover,
